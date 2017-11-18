@@ -1,7 +1,5 @@
 package com.rpramadhan.sbstarter.model;
 
-import java.util.List;
-
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -17,9 +15,6 @@ public class Response {
 	
 	@JsonProperty("result")
 	private Object result;
-	
-	@JsonProperty("errors")
-	private List<ErrorHolder> errors;
 
 	public String getCode() {
 		return code;
@@ -40,13 +35,6 @@ public class Response {
 	}
 	public void setResult(Object result) {
 		this.result = result;
-	}
-	
-	public List<ErrorHolder> getErrors() {
-		return errors;
-	}
-	public void setErrors(List<ErrorHolder> errors) {
-		this.errors = errors;
 	}
 	
 }
