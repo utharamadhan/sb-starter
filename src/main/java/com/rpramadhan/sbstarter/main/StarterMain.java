@@ -5,11 +5,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 /**
- * @author someone
- * Enter point for Secure Page Service
+ * @author rpramadhan
+ * Enter point for Starter Application
  */
 @SpringBootApplication
-@ComponentScan("com.btpn.si")
+@ComponentScan("com.rpramadhan.sbstarter")
 public class StarterMain {
 	
 	public static void main(String[] args) throws Exception {

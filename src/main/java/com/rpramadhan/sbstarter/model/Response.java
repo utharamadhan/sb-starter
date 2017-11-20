@@ -1,40 +1,46 @@
 package com.rpramadhan.sbstarter.model;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import java.io.Serializable;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-@JsonInclude(Include.NON_NULL)
-public class Response {
-	
+public class Response implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -6143474484193228992L;
+
 	@JsonProperty("responseCode")
-	private String code;
+	private String responseCode;
 	
 	@JsonProperty("responseDesc")
-	private String message;
+	private String responseDesc;
 	
 	@JsonProperty("result")
 	private Object result;
 
-	public String getCode() {
-		return code;
-	}
-	public void setCode(String code) {
-		this.code = code;
+	public String getResponseCode() {
+		return responseCode;
 	}
 
-	public String getMessage() {
-		return message;
+	public void setResponseCode(String responseCode) {
+		this.responseCode = responseCode;
 	}
-	public void setMessage(String message) {
-		this.message = message;
+
+	public String getResponseDesc() {
+		return responseDesc;
 	}
-	
+
+	public void setResponseDesc(String responseDesc) {
+		this.responseDesc = responseDesc;
+	}
+
 	public Object getResult() {
 		return result;
 	}
+
 	public void setResult(Object result) {
 		this.result = result;
 	}
-	
+
 }
